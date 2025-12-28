@@ -1,2 +1,2 @@
-export { createModalStack } from "./createModalStack";
+export { createStackModal } from "./createStackModal";
 export type { ModalLayout } from "./type";

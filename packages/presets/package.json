@@ -1,10 +1,18 @@
 {
-  "name": "modal-stack-presets",
+  "name": "@ivex0002/stack-modal-presets",
   "version": "1.0.0",
-  "description": "Preset layouts for modal-stack library",
+  "description": "Preset layouts for @ivex0002/stack-modal library",
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist",
     "README.md"
@@ -13,21 +21,20 @@
     "access": "public"
   },
   "keywords": [
-    "modal-stack",
-    "modal-stack-presets",
+    "stack-modal",
+    "stack-modal-presets",
     "react",
     "modal",
     "preset",
     "layout",
-    "ui",
-    "modal-stack"
+    "ui"
   ],
   "author": "ivex0002",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ivex0002/modal-stack.git",
-    "directory": "packages/modal-stack-presets"
+    "url": "https://github.com/Ivex0002/stack-modal.git",
+    "directory": "packages/stack-modal-presets"
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
@@ -35,12 +42,12 @@
   },
   "peerDependencies": {
     "react": ">=18.0.0",
-    "modal-stack": "^1.0.0"
+    "@ivex0002/stack-modal": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
     "react": "^18.0.0",
-    "modal-stack": "workspace:*",
+    "@ivex0002/stack-modal": "workspace:*",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   }

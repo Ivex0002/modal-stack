@@ -1,5 +1,5 @@
 import React from "react";
-import { ModalLayout } from "modal-stack";
+import { ModalLayout } from "@ivex0002/stack-modal";
 
 export const drawerPreset: ModalLayout = {
   Background: ({

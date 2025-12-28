@@ -1,17 +1,25 @@
 {
-  "name": "modal-stack",
+  "name": "@ivex0002/stack-modal",
   "version": "1.0.0",
   "description": "A flexible and customizable modal stack management library for React",
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist",
     "README.md"
   ],
   "keywords": [
-    "modal-stack",
-    "modal-stack-presets",
+    "stack-modal",
+    "stack-modal-presets",
     "react",
     "modal",
     "stack",
@@ -24,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ivex0002/modal-stack.git"
+    "url": "https://github.com/Ivex0002/stack-modal"
   },
   "bugs": {
-    "url": "https://github.com/Ivex0002/modal-stack/issues"
+    "url": "https://github.com/Ivex0002/stack-modal/issues"
   },
-  "homepage": "https://github.com/Ivex0002/modal-stack#readme",
+  "homepage": "https://github.com/Ivex0002/stack-modal#readme",
   "publishConfig": {
     "access": "public"
   },

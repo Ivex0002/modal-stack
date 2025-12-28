@@ -3,7 +3,7 @@ import { ModalRender } from "./ModalRender";
 import { createStackStore } from "./createStackStore";
 import type { ModalLayout, ModalRegistry, PushFn } from "./type";
 
-export function createModalStack<M extends ModalRegistry = ModalRegistry>(
+export function createStackModal<M extends ModalRegistry = ModalRegistry>(
   modals: M,
   modalLayout: ModalLayout
 ) {

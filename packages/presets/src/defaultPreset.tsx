@@ -1,5 +1,5 @@
 import React from "react";
-import { ModalLayout } from "modal-stack";
+import { ModalLayout } from "@ivex0002/stack-modal";
 
 const STACK_OFFSET = 100;
 const SCALE_STEP = 0.08;

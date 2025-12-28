@@ -1,4 +1,4 @@
-# Modal Stack
+# @ivex0002/stack-modal
 
 A flexible and customizable modal stack management library for React applications. Modal Stack allows you to create layered modals with smooth animations and various preset styles.
 
@@ -14,7 +14,7 @@ A flexible and customizable modal stack management library for React application
 
 ### test project link
 
-https://github.com/Ivex0002/modal-stack-test-project
+https://github.com/Ivex0002/@ivex0002/stack-modal-test-project
 
 ## Features
 
@@ -32,7 +32,7 @@ https://github.com/Ivex0002/modal-stack-test-project
 ### Core Package
 
 ```bash
-npm install modal-stack
+npm install @ivex0002/stack-modal
 ```
 
 ### Presets (Optional)
@@ -40,7 +40,7 @@ npm install modal-stack
 If you want to use built-in presets:
 
 ```bash
-npm install modal-stack-presets
+npm install @ivex0002/stack-modal-presets
 ```
 
 > **Note**: Presets are optional. If you're creating custom layouts, you don't need to install this presets package.
@@ -48,8 +48,8 @@ npm install modal-stack-presets
 ## Quick Start
 
 ```typescript
-import { createModalStack } from "modal-stack";
-import { defaultPreset } from "modal-stack-presets";
+import { createModalStack } from "@ivex0002/stack-modal";
+import { defaultPreset } from "@ivex0002/stack-modal-presets";
 
 // Define your modals
 const modals = {
@@ -99,7 +99,7 @@ function App() {
 A centered modal with stacking animation. Multiple modals are displayed with offset and scale effects.
 
 ```typescript
-import { defaultPreset } from "modal-stack-presets";
+import { defaultPreset } from "@ivex0002/stack-modal-presets";
 
 const modal = createModalStack(modals, defaultPreset);
 ```
@@ -109,7 +109,7 @@ const modal = createModalStack(modals, defaultPreset);
 A simple centered modal with fade transitions. Only the top modal is visible.
 
 ```typescript
-import { minimalPreset } from "modal-stack-presets";
+import { minimalPreset } from "@ivex0002/stack-modal-presets";
 
 const modal = createModalStack(modals, minimalPreset);
 ```
@@ -119,7 +119,7 @@ const modal = createModalStack(modals, minimalPreset);
 A bottom sheet style modal that slides up from the bottom of the screen.
 
 ```typescript
-import { drawerPreset } from "modal-stack-presets";
+import { drawerPreset } from "@ivex0002/stack-modal-presets";
 
 const modal = createModalStack(modals, drawerPreset);
 ```
@@ -160,7 +160,7 @@ this example made with tailwindcss & framer-motion.
 ```typescript
 import { motion } from "framer-motion";
 import React from "react";
-import type { ModalLayout } from "modal-stack";
+import type { ModalLayout } from "@ivex0002/stack-modal";
 
 const STACK_OFFSET = 80;
 const SCALE_STEP = 0.06;

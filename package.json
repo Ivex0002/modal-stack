@@ -1,5 +1,5 @@
 {
-  "name": "modal-stack-workspace",
+  "name": "@ivex0002/stack-modal-workspace",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
