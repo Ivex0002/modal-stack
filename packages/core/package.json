@@ -10,6 +10,8 @@
     "../../README.md"
   ],
   "keywords": [
+    "modal-stack",
+    "modal-stack-presets",
     "react",
     "modal",
     "stack",

@@ -12,6 +12,23 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "modal-stack",
+    "modal-stack-presets",
+    "react",
+    "modal",
+    "preset",
+    "layout",
+    "ui",
+    "modal-stack"
+  ],
+  "author": "ivex0002",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ivex0002/modal-stack.git",
+    "directory": "packages/modal-stack-presets"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "pack:test": "npm run build && npm pack"
