@@ -1,16 +1,16 @@
 {
   "name": "@ivex0002/stack-modal-presets",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Preset layouts for @ivex0002/stack-modal library",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "files": [
@@ -37,7 +37,7 @@
     "directory": "packages/stack-modal-presets"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "pack:test": "npm run build && npm pack"
   },
   "peerDependencies": {
