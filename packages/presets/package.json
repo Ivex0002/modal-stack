@@ -1,12 +1,17 @@
 {
   "name": "modal-stack-presets",
   "version": "1.0.0",
+  "description": "Preset layouts for modal-stack library",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "../../README.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "pack:test": "npm run build && npm pack"
