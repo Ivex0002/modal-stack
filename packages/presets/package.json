@@ -1,6 +1,6 @@
 {
   "name": "@ivex0002/stack-modal-presets",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Preset layouts for @ivex0002/stack-modal library",
   "type": "module",
   "main": "./dist/index.cjs",
