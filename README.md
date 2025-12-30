@@ -48,7 +48,7 @@ npm install @ivex0002/stack-modal-presets
 ## Quick Start
 
 ```typescript
-import { createModalStack } from "@ivex0002/stack-modal";
+import { createStackModal } from "@ivex0002/stack-modal";
 import { defaultPreset } from "@ivex0002/stack-modal-presets";
 
 // Define your modals
@@ -68,7 +68,7 @@ const modals = {
 };
 
 // Create modal instance with preset
-const modal = createModalStack(modals, defaultPreset);
+const modal = createStackModal(modals, defaultPreset);
 
 // Use in your component
 function App() {
@@ -101,7 +101,7 @@ A centered modal with stacking animation. Multiple modals are displayed with off
 ```typescript
 import { defaultPreset } from "@ivex0002/stack-modal-presets";
 
-const modal = createModalStack(modals, defaultPreset);
+const modal = createStackModal(modals, defaultPreset);
 ```
 
 ### Minimal Preset
@@ -111,7 +111,7 @@ A simple centered modal with fade transitions. Only the top modal is visible.
 ```typescript
 import { minimalPreset } from "@ivex0002/stack-modal-presets";
 
-const modal = createModalStack(modals, minimalPreset);
+const modal = createStackModal(modals, minimalPreset);
 ```
 
 ### Drawer Preset
@@ -121,12 +121,12 @@ A bottom sheet style modal that slides up from the bottom of the screen.
 ```typescript
 import { drawerPreset } from "@ivex0002/stack-modal-presets";
 
-const modal = createModalStack(modals, drawerPreset);
+const modal = createStackModal(modals, drawerPreset);
 ```
 
 ## API Reference
 
-### `createModalStack(modals, modalLayout)`
+### `createStackModal(modals, modalLayout)`
 
 Creates a modal instance with the specified modals and layout.
 
@@ -142,7 +142,7 @@ Creates a modal instance with the specified modals and layout.
 ### Modal Control Object
 
 ```typescript
-const modal = createModalStack(modals, preset);
+const modal = createStackModal(modals, preset);
 
 // Push a modal
 modal.modalName.push(props);
@@ -278,7 +278,7 @@ export const twfmModalLayoutExample: ModalLayout = {
   },
 };
 
-const modal = createModalStack(modals, twfmModalLayoutExample);
+const modal = createStackModal(modals, twfmModalLayoutExample);
 ```
 
 ### ModalLayout Interface
@@ -394,7 +394,7 @@ const modals = {
   ),
 };
 
-const modal = createModalStack(modals, defaultPreset);
+const modal = createStackModal(modals, defaultPreset);
 
 // ✅ Correct
 modal.user.push({ name: "John", age: 30 });
@@ -520,7 +520,7 @@ const modals = {
 };
 
 // 2. Create modal instance
-const modal = createModalStack(modals, preset);
+const modal = createStackModal(modals, preset);
 
 // This creates:
 // - A store to manage modal stack
@@ -569,11 +569,11 @@ modal.pop();
 
 ### Modals not appearing?
 
-Make sure `createModalStack` is called at the module level, not inside a component:
+Make sure `createStackModal` is called at the module level, not inside a component:
 
 ```typescript
 // ✅ Correct
-const modal = createModalStack(modals, preset);
+const modal = createStackModal(modals, preset);
 
 function App() {
   return <button onClick={() => modal.alert.push()}>Open</button>;
@@ -581,7 +581,7 @@ function App() {
 
 // ❌ Wrong - creates new instance on every render
 function App() {
-  const modal = createModalStack(modals, preset);
+  const modal = createStackModal(modals, preset);
   return <button onClick={() => modal.alert.push()}>Open</button>;
 }
 ```
